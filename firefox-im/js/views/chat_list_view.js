@@ -9,7 +9,7 @@
 
     events: {
       "click .chat": "loadChatView",
-      "click #contact": "loadContactView",
+      //"click #contact": "loadContactView",
     },
 
     initialize: function(collection, options) {
