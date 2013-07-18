@@ -11,6 +11,7 @@
 
     routes: {
       "chat/:id": "chat",
+      "user/:id/contacts": "contact",
       "user/:id": "user",
       "settings": "settings",
       "chatList": "chatList",
@@ -23,7 +24,12 @@
       }); 
       this.renderParentView(FirefoxIM.Views.ChatListView, FirefoxIM.chatList);
     },
-
+    contact: function(id) {
+      FirefoxIM.contact = FirefoxIM.contact || new FirefoxIM.Collections.Contact(undefined, {
+	firebase: this.firebaseRef.child('contacts')
+      });
+      this.renderParentView(FirefoxIM.Views.ContactView, FirefoxIM.contact);
+    },
     chat: function(id) {
       this.renderParentView(FirefoxIM.ChatView, {});
     },
