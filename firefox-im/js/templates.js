@@ -21,7 +21,7 @@
     return $('<section role="region" id="list-view">' +
       '<header>'+
       '   <menu type="toolbar">'+
-      '      <button><span class="icon icon-menu">menu</span></button>'+
+      '      <button><span class="icon icon-user">user</span></button>'+
       '  </menu>'+
       '  <form action="#">'+
       '     <input type="text" placeholder="search" required="required">'+
