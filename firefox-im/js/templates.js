@@ -21,7 +21,7 @@
     return $('<section role="region" id="list-view">' +
       '<header>'+
       '   <menu type="toolbar">'+
-      '      <button id="contact"><span class="icon icon-user">user</span></button>'+
+      '      <button><span class="icon icon-user">user</span></button>'+
       '  </menu>'+
       '  <form action="#">'+
       '     <input type="text" placeholder="search" required="required">'+
@@ -33,23 +33,6 @@
       '  </ul>'+
       '</article>'+
       '</section>');
-  };
-
-  FirefoxIM.Templates.contactView = function(contacts) {
-     return $('<body role="application">' +
-  	'<section role="region">'+
-  	'<header>'+
-	   '<button><a href="index.html"><span class="icon icon-back">back</span></button></a>'+
-    	   '<menu type="toolbar">'+
-      		'<button><a href="addUser.html"><span class="icon icon-add">add</span></button></a>'+
-    	   '</menu>'+
-    	   '<h1>Contact</h1>'+
-  	'</header>'+
-  	'<article id="threads" data-type="list">'+
-  	'<ul>'+
-  	'</ul>'+
-  	'</article>'+
-  	'</section>');
   };
 
   FirefoxIM.Templates.chatList = function(chats) {
