@@ -9,6 +9,7 @@
 
     events: {
       "click .chat": "loadChatView",
+      "click #contact": "loadContactView",
     },
 
     initialize: function(collection, options) {
@@ -30,6 +31,10 @@
     loadChatView: function(e) {
       var id = $(e.currentTarget).closest('.chat').data("chatID");
       Backbone.router.navigate("chat/" + id, {trigger: true});
+    }
+
+    loadContactView function() {
+	FirefoxIM.router.navigate('contact', {trigger:true});
     }
 
   });
