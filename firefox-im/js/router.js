@@ -11,7 +11,7 @@
 
     routes: {
       "chat/:id": "chat",
-      //"user/:id/contacts": "contact",
+      "user/:id/contacts": "contact",
       "user/:id": "user",
       "settings": "settings",
       "chatList": "chatList",
