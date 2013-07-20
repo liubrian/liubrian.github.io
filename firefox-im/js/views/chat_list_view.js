@@ -33,9 +33,9 @@
       Backbone.router.navigate("chat/" + id, {trigger: true});
     }
 
-    /*loadContactView function() {
+    loadContactView function() {
 	FirefoxIM.router.navigate('contact', {trigger:true});
-    }*/
+    }
 
   });
 
