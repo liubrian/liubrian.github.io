@@ -35,7 +35,7 @@
 
     loadContactView function() 
 	{
-	FirefoxIM.router.navigate("user/" + FirefoxIM.user.id + "contact", {trigger:true});
+	FirefoxIM.router.navigate("user/" + FirefoxIM.user.id + "/contact", {trigger:true});
     }
 
   });
